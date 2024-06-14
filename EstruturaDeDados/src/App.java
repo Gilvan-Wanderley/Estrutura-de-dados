@@ -1,10 +1,28 @@
 import dataStructure.LinkedList;
 import dataStructure.Queue;
 import dataStructure.Stack;
+import dataStructure.Tree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        queue();
+        tree();
+    }
+    public static void tree(){
+        Tree<Integer> tree = new Tree<Integer>(37);
+        tree.insert(11);
+        tree.insert(66);
+        tree.insert(8);
+        tree.insert(17);
+        tree.insert(42);
+        tree.insert(72);
+
+        tree.BFS();
+        // tree.posOrder();
+        // tree.inOrder();
+        // tree.preOrder();
+        // System.out.println(tree.root.data);
+        // System.out.println(tree.root.left.data);
+        // System.out.println(tree.root.right.data);
     }
 
     public static void queue(){
