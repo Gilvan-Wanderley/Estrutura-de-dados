@@ -1,9 +1,18 @@
 import dataStructure.LinkedList;
+import dataStructure.Queue;
 import dataStructure.Stack;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        stack();
+        queue();
+    }
+
+    public static void queue(){
+        Queue queue = new Queue("1");
+        queue.enqueue("2");
+        queue.enqueue("3");
+        queue.dequeue();
+        queue.print();
     }
 
     public static void stack(){
