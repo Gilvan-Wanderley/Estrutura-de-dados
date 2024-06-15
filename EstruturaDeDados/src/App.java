@@ -1,3 +1,4 @@
+import dataStructure.BST;
 import dataStructure.LinkedList;
 import dataStructure.Queue;
 import dataStructure.Stack;
@@ -5,7 +6,20 @@ import dataStructure.Tree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        tree();
+        BST();
+    }
+    public static void BST(){
+        BST bst = new BST(37);
+        bst.insert(11);
+        bst.insert(66);
+        bst.insert(8);
+        bst.insert(17);
+        bst.insert(42);
+        bst.insert(72);
+
+        System.out.println(bst.contains(11));
+        System.out.println(bst.contains(99));
+
     }
     public static void tree(){
         Tree<Integer> tree = new Tree<Integer>(37);
